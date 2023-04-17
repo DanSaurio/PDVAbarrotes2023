@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "WinForm_Abarrotes_PDV/1.0.0": {
         "dependencies": {
+          "Back_CRUDs_BD": "1.0.0",
           "Middle_Abarrotes_PDV": "1.0.0"
         },
         "runtime": {

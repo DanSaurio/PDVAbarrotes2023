@@ -38,3 +38,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `nombre`, `Correo`, `password`, `imagen`) VALUES
 (0, 'Admin', 'Admin@uhtermosillo.edu.mx', 'admin123', '1231235');
+
+
+Create table ventas(id int(11),fecha_hora varchar(255),monto double,cajero_id int(11));
+Create table ventas_detalles(venta_id int(11),producto_id int(11),cantidad int(20));

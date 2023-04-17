@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6sEhLfc3dG+FW93facs07nr8VIVx2X6SOOPSllpVdJgsx6R7F9MIz/9Qk8ea6XBPrU4LA5WB+8i4danwaBXw3w==",
+  "dgSpecHash": "HpUCaf2lLfFG+h9sfnNFekSIKMpDonB3/F0ZSvFipvdcATTypGgY6qwMBIPMFd4E5QfwAIK0cdeQq6Eh2wrYrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danjo\\source\\repos\\Venta\\PDVAbarrotes2023-master\\code\\PDV2023\\WinForm_Abarrotes_PDV\\WinForm_Abarrotes_PDV.csproj",
+  "projectFilePath": "C:\\Users\\danjo\\OneDrive\\Escritorio\\VentaWena\\Venta\\PDVAbarrotes2023-master\\code\\PDV2023\\WinForm_Abarrotes_PDV\\WinForm_Abarrotes_PDV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danjo\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\danjo\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

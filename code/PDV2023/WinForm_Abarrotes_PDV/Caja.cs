@@ -1,4 +1,5 @@
 ﻿using Middle_Abarrotes_PDV;
+using pruebaVENTA;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace WinForm_Abarrotes_PDV
         //instanca de Producto
         Producto prodAVender;
         Venta venta;
+        Producto prod = new Producto();
         public Caja()
         {
             InitializeComponent();
@@ -56,6 +58,7 @@ namespace WinForm_Abarrotes_PDV
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
+
             //preparamos las vars para registra la venta
             List<ProductoAVender> prodsAVender = new List<ProductoAVender>();
             for (int i = 0; i < dGridVentas.Rows.Count - 1; i++)
@@ -76,6 +79,12 @@ namespace WinForm_Abarrotes_PDV
             else
             {
                 MessageBox.Show("Registrada Correcta", "Su cambio es $" + cambio + ", vuelva pronto.");
+                txtEfectivo.Clear();
+                txtCodBarras.Clear();
+                numericCantidad.ResetText();
+                txtIva.Clear();
+                txtSubtotal.Clear();
+                txtTotal.Clear();
             }
         }
 
@@ -87,6 +96,37 @@ namespace WinForm_Abarrotes_PDV
         private void Caja_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dGridVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnCancelarpago_Click(object sender, EventArgs e)
+        {
+            txtEfectivo.Clear();
+            txtCodBarras.Clear();
+            numericCantidad.ResetText();
+            txtIva.Clear();
+            txtSubtotal.Clear();
+            txtTotal.Clear();
+        }
+
+        private void txtCodBarras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                btnAgregar_Click(sender, e);
+            }
+        }
+
+        private void txtEfectivo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                btnPagar_Click(sender, e);
+            }
         }
     }
 }

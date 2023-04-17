@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "njeHYMqesNdxzlnPRVhjeaKl2n8r2NzBRNkIr5WqUh9fz8ZnsvtQndckUZCPG667FUpEntDeLdrRG4MAdlGR0A==",
+  "dgSpecHash": "CbiT5bh0kzqEVL1PdI2gvfkADQ91JXpD/KJ/US9urDb7MuGVrmoelGiV0TiqUwaWLZnPGY4WtRMXvqxx28484Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danjo\\source\\repos\\Venta\\PDVAbarrotes2023-master\\code\\PDV2023\\PruebaDEBack\\PruebaDEBack.csproj",
+  "projectFilePath": "C:\\Users\\danjo\\OneDrive\\Escritorio\\VentaWena\\Venta\\PDVAbarrotes2023-master\\code\\PDV2023\\PruebaDEBack\\PruebaDEBack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danjo\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\danjo\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

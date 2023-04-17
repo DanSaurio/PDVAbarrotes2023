@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Back_CRUDs_BD;
-
+using WinForm_Abarrotes_PDV;
 
 namespace pruebaVENTA
 {
@@ -61,7 +61,7 @@ namespace pruebaVENTA
             }
             else
             {
-                MessageBox.Show("No hay USUARIOS registrados aún...");
+                MessageBox.Show("Usuario o Contraseña incorrectos");
             }
 
             con.Close();
@@ -83,6 +83,18 @@ namespace pruebaVENTA
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            this.Hide();
+            admin.Show();
+        }
+
+        private void iconcerrarlogin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -29,228 +29,281 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Interfaz));
-            this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnAddProducto = new System.Windows.Forms.Button();
-            this.EliminarProductos = new System.Windows.Forms.Button();
-            this.Editar = new System.Windows.Forms.Button();
-            this.Productos = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.iconminimizar = new System.Windows.Forms.PictureBox();
-            this.iconrestaurar = new System.Windows.Forms.PictureBox();
-            this.iconmaximizar = new System.Windows.Forms.PictureBox();
-            this.iconcerrar = new System.Windows.Forms.PictureBox();
-            this.btnMenu = new System.Windows.Forms.PictureBox();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            this.BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconminimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconrestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.SuspendLayout();
+            MenuVertical = new Panel();
+            btnUsuarios = new Button();
+            btnVentas = new Button();
+            btnAddProducto = new Button();
+            EliminarProductos = new Button();
+            Editar = new Button();
+            Productos = new Button();
+            pictureBoxLogo = new PictureBox();
+            BarraTitulo = new Panel();
+            iconminimizar = new PictureBox();
+            iconrestaurar = new PictureBox();
+            iconmaximizar = new PictureBox();
+            iconcerrar = new PictureBox();
+            btnMenu = new PictureBox();
+            panelContenedor = new Panel();
+            MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
+            BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconminimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconrestaurar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconmaximizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconcerrar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
+            SuspendLayout();
             // 
             // MenuVertical
             // 
-            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(161)))), ((int)(((byte)(200)))));
-            this.MenuVertical.Controls.Add(this.btnAddProducto);
-            this.MenuVertical.Controls.Add(this.EliminarProductos);
-            this.MenuVertical.Controls.Add(this.Editar);
-            this.MenuVertical.Controls.Add(this.Productos);
-            this.MenuVertical.Controls.Add(this.pictureBoxLogo);
-            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
-            this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(250, 650);
-            this.MenuVertical.TabIndex = 0;
+            MenuVertical.BackColor = Color.FromArgb(88, 161, 200);
+            MenuVertical.Controls.Add(btnUsuarios);
+            MenuVertical.Controls.Add(btnVentas);
+            MenuVertical.Controls.Add(btnAddProducto);
+            MenuVertical.Controls.Add(EliminarProductos);
+            MenuVertical.Controls.Add(Editar);
+            MenuVertical.Controls.Add(Productos);
+            MenuVertical.Controls.Add(pictureBoxLogo);
+            MenuVertical.Dock = DockStyle.Left;
+            MenuVertical.Location = new Point(0, 0);
+            MenuVertical.Margin = new Padding(4, 3, 4, 3);
+            MenuVertical.Name = "MenuVertical";
+            MenuVertical.Size = new Size(292, 750);
+            MenuVertical.TabIndex = 0;
+            // 
+            // btnUsuarios
+            // 
+            btnUsuarios.FlatAppearance.BorderSize = 0;
+            btnUsuarios.FlatAppearance.MouseOverBackColor = Color.Olive;
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUsuarios.ForeColor = Color.White;
+            btnUsuarios.Image = (Image)resources.GetObject("btnUsuarios.Image");
+            btnUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsuarios.Location = new Point(0, 407);
+            btnUsuarios.Margin = new Padding(4, 3, 4, 3);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Size = new Size(292, 52);
+            btnUsuarios.TabIndex = 5;
+            btnUsuarios.Text = "Usuarios";
+            btnUsuarios.UseVisualStyleBackColor = true;
+            btnUsuarios.Click += btnUsuarios_Click;
+            // 
+            // btnVentas
+            // 
+            btnVentas.FlatAppearance.BorderSize = 0;
+            btnVentas.FlatAppearance.MouseOverBackColor = Color.Olive;
+            btnVentas.FlatStyle = FlatStyle.Flat;
+            btnVentas.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVentas.ForeColor = Color.White;
+            btnVentas.Image = (Image)resources.GetObject("btnVentas.Image");
+            btnVentas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVentas.Location = new Point(0, 359);
+            btnVentas.Margin = new Padding(4, 3, 4, 3);
+            btnVentas.Name = "btnVentas";
+            btnVentas.Size = new Size(292, 52);
+            btnVentas.TabIndex = 4;
+            btnVentas.Text = "Ventas";
+            btnVentas.UseVisualStyleBackColor = true;
+            btnVentas.Click += btnVentas_Click;
             // 
             // btnAddProducto
             // 
-            this.btnAddProducto.FlatAppearance.BorderSize = 0;
-            this.btnAddProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.btnAddProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProducto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAddProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProducto.Image")));
-            this.btnAddProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddProducto.Location = new System.Drawing.Point(0, 178);
-            this.btnAddProducto.Name = "btnAddProducto";
-            this.btnAddProducto.Size = new System.Drawing.Size(250, 45);
-            this.btnAddProducto.TabIndex = 3;
-            this.btnAddProducto.Text = "Agregar Producto";
-            this.btnAddProducto.UseVisualStyleBackColor = true;
-            this.btnAddProducto.Click += new System.EventHandler(this.AgregarProducto_Click);
+            btnAddProducto.FlatAppearance.BorderSize = 0;
+            btnAddProducto.FlatAppearance.MouseOverBackColor = Color.Green;
+            btnAddProducto.FlatStyle = FlatStyle.Flat;
+            btnAddProducto.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAddProducto.ForeColor = Color.White;
+            btnAddProducto.Image = (Image)resources.GetObject("btnAddProducto.Image");
+            btnAddProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAddProducto.Location = new Point(0, 205);
+            btnAddProducto.Margin = new Padding(4, 3, 4, 3);
+            btnAddProducto.Name = "btnAddProducto";
+            btnAddProducto.Size = new Size(292, 52);
+            btnAddProducto.TabIndex = 3;
+            btnAddProducto.Text = "Agregar Producto";
+            btnAddProducto.UseVisualStyleBackColor = true;
+            btnAddProducto.Click += AgregarProducto_Click;
             // 
             // EliminarProductos
             // 
-            this.EliminarProductos.FlatAppearance.BorderSize = 0;
-            this.EliminarProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.EliminarProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EliminarProductos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarProductos.ForeColor = System.Drawing.Color.White;
-            this.EliminarProductos.Image = ((System.Drawing.Image)(resources.GetObject("EliminarProductos.Image")));
-            this.EliminarProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarProductos.Location = new System.Drawing.Point(0, 229);
-            this.EliminarProductos.Name = "EliminarProductos";
-            this.EliminarProductos.Size = new System.Drawing.Size(250, 45);
-            this.EliminarProductos.TabIndex = 2;
-            this.EliminarProductos.Text = "Eliminar Productos";
-            this.EliminarProductos.UseVisualStyleBackColor = true;
-            this.EliminarProductos.Click += new System.EventHandler(this.EliminarProductos_Click);
+            EliminarProductos.FlatAppearance.BorderSize = 0;
+            EliminarProductos.FlatAppearance.MouseOverBackColor = Color.Maroon;
+            EliminarProductos.FlatStyle = FlatStyle.Flat;
+            EliminarProductos.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            EliminarProductos.ForeColor = Color.White;
+            EliminarProductos.Image = (Image)resources.GetObject("EliminarProductos.Image");
+            EliminarProductos.ImageAlign = ContentAlignment.MiddleLeft;
+            EliminarProductos.Location = new Point(0, 264);
+            EliminarProductos.Margin = new Padding(4, 3, 4, 3);
+            EliminarProductos.Name = "EliminarProductos";
+            EliminarProductos.Size = new Size(292, 52);
+            EliminarProductos.TabIndex = 2;
+            EliminarProductos.Text = "Eliminar Productos";
+            EliminarProductos.UseVisualStyleBackColor = true;
+            EliminarProductos.Click += EliminarProductos_Click;
             // 
             // Editar
             // 
-            this.Editar.FlatAppearance.BorderSize = 0;
-            this.Editar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Olive;
-            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Editar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Editar.ForeColor = System.Drawing.Color.White;
-            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
-            this.Editar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Editar.Location = new System.Drawing.Point(0, 270);
-            this.Editar.Name = "Editar";
-            this.Editar.Size = new System.Drawing.Size(250, 45);
-            this.Editar.TabIndex = 1;
-            this.Editar.Text = "Editar";
-            this.Editar.UseVisualStyleBackColor = true;
-            this.Editar.Click += new System.EventHandler(this.Editar_Click);
+            Editar.FlatAppearance.BorderSize = 0;
+            Editar.FlatAppearance.MouseOverBackColor = Color.Olive;
+            Editar.FlatStyle = FlatStyle.Flat;
+            Editar.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Editar.ForeColor = Color.White;
+            Editar.Image = (Image)resources.GetObject("Editar.Image");
+            Editar.ImageAlign = ContentAlignment.MiddleLeft;
+            Editar.Location = new Point(0, 312);
+            Editar.Margin = new Padding(4, 3, 4, 3);
+            Editar.Name = "Editar";
+            Editar.Size = new Size(292, 52);
+            Editar.TabIndex = 1;
+            Editar.Text = "Editar";
+            Editar.UseVisualStyleBackColor = true;
+            Editar.Click += Editar_Click;
             // 
             // Productos
             // 
-            this.Productos.FlatAppearance.BorderSize = 0;
-            this.Productos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.Productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Productos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Productos.ForeColor = System.Drawing.Color.White;
-            this.Productos.Image = ((System.Drawing.Image)(resources.GetObject("Productos.Image")));
-            this.Productos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Productos.Location = new System.Drawing.Point(0, 127);
-            this.Productos.Name = "Productos";
-            this.Productos.Size = new System.Drawing.Size(250, 45);
-            this.Productos.TabIndex = 0;
-            this.Productos.Text = "Productos";
-            this.Productos.UseVisualStyleBackColor = true;
-            this.Productos.Click += new System.EventHandler(this.Productos_Click);
+            Productos.FlatAppearance.BorderSize = 0;
+            Productos.FlatAppearance.MouseOverBackColor = Color.Green;
+            Productos.FlatStyle = FlatStyle.Flat;
+            Productos.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Productos.ForeColor = Color.White;
+            Productos.Image = (Image)resources.GetObject("Productos.Image");
+            Productos.ImageAlign = ContentAlignment.MiddleLeft;
+            Productos.Location = new Point(0, 147);
+            Productos.Margin = new Padding(4, 3, 4, 3);
+            Productos.Name = "Productos";
+            Productos.Size = new Size(292, 52);
+            Productos.TabIndex = 0;
+            Productos.Text = "Productos";
+            Productos.UseVisualStyleBackColor = true;
+            Productos.Click += Productos_Click;
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(150, 82);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 0;
-            this.pictureBoxLogo.TabStop = false;
+            pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
+            pictureBoxLogo.Location = new Point(24, 0);
+            pictureBoxLogo.Margin = new Padding(4, 3, 4, 3);
+            pictureBoxLogo.Name = "pictureBoxLogo";
+            pictureBoxLogo.Size = new Size(239, 120);
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxLogo.TabIndex = 0;
+            pictureBoxLogo.TabStop = false;
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(81)))), ((int)(((byte)(209)))));
-            this.BarraTitulo.Controls.Add(this.iconminimizar);
-            this.BarraTitulo.Controls.Add(this.iconrestaurar);
-            this.BarraTitulo.Controls.Add(this.iconmaximizar);
-            this.BarraTitulo.Controls.Add(this.iconcerrar);
-            this.BarraTitulo.Controls.Add(this.btnMenu);
-            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraTitulo.Location = new System.Drawing.Point(250, 0);
-            this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1050, 50);
-            this.BarraTitulo.TabIndex = 1;
-            this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
-            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            BarraTitulo.BackColor = Color.FromArgb(15, 81, 209);
+            BarraTitulo.Controls.Add(iconminimizar);
+            BarraTitulo.Controls.Add(iconrestaurar);
+            BarraTitulo.Controls.Add(iconmaximizar);
+            BarraTitulo.Controls.Add(iconcerrar);
+            BarraTitulo.Controls.Add(btnMenu);
+            BarraTitulo.Dock = DockStyle.Top;
+            BarraTitulo.Location = new Point(292, 0);
+            BarraTitulo.Margin = new Padding(4, 3, 4, 3);
+            BarraTitulo.Name = "BarraTitulo";
+            BarraTitulo.Size = new Size(1088, 58);
+            BarraTitulo.TabIndex = 1;
+            BarraTitulo.Paint += BarraTitulo_Paint;
+            BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
             // iconminimizar
             // 
-            this.iconminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconminimizar.Image = ((System.Drawing.Image)(resources.GetObject("iconminimizar.Image")));
-            this.iconminimizar.Location = new System.Drawing.Point(975, 3);
-            this.iconminimizar.Name = "iconminimizar";
-            this.iconminimizar.Size = new System.Drawing.Size(20, 20);
-            this.iconminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconminimizar.TabIndex = 4;
-            this.iconminimizar.TabStop = false;
-            this.iconminimizar.Click += new System.EventHandler(this.iconminimizar_Click);
+            iconminimizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconminimizar.Image = (Image)resources.GetObject("iconminimizar.Image");
+            iconminimizar.Location = new Point(970, 0);
+            iconminimizar.Margin = new Padding(4, 3, 4, 3);
+            iconminimizar.Name = "iconminimizar";
+            iconminimizar.Size = new Size(23, 23);
+            iconminimizar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconminimizar.TabIndex = 4;
+            iconminimizar.TabStop = false;
+            iconminimizar.Click += iconminimizar_Click;
             // 
             // iconrestaurar
             // 
-            this.iconrestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconrestaurar.Image = ((System.Drawing.Image)(resources.GetObject("iconrestaurar.Image")));
-            this.iconrestaurar.Location = new System.Drawing.Point(1001, 3);
-            this.iconrestaurar.Name = "iconrestaurar";
-            this.iconrestaurar.Size = new System.Drawing.Size(20, 20);
-            this.iconrestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconrestaurar.TabIndex = 3;
-            this.iconrestaurar.TabStop = false;
-            this.iconrestaurar.Visible = false;
-            this.iconrestaurar.Click += new System.EventHandler(this.iconrestaurar_Click);
+            iconrestaurar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconrestaurar.Image = (Image)resources.GetObject("iconrestaurar.Image");
+            iconrestaurar.Location = new Point(1000, 0);
+            iconrestaurar.Margin = new Padding(4, 3, 4, 3);
+            iconrestaurar.Name = "iconrestaurar";
+            iconrestaurar.Size = new Size(23, 23);
+            iconrestaurar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconrestaurar.TabIndex = 3;
+            iconrestaurar.TabStop = false;
+            iconrestaurar.Visible = false;
+            iconrestaurar.Click += iconrestaurar_Click;
             // 
             // iconmaximizar
             // 
-            this.iconmaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconmaximizar.Image = ((System.Drawing.Image)(resources.GetObject("iconmaximizar.Image")));
-            this.iconmaximizar.Location = new System.Drawing.Point(1001, 3);
-            this.iconmaximizar.Name = "iconmaximizar";
-            this.iconmaximizar.Size = new System.Drawing.Size(20, 20);
-            this.iconmaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconmaximizar.TabIndex = 2;
-            this.iconmaximizar.TabStop = false;
-            this.iconmaximizar.Click += new System.EventHandler(this.iconmaximizar_Click);
+            iconmaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconmaximizar.Image = (Image)resources.GetObject("iconmaximizar.Image");
+            iconmaximizar.Location = new Point(1000, 0);
+            iconmaximizar.Margin = new Padding(4, 3, 4, 3);
+            iconmaximizar.Name = "iconmaximizar";
+            iconmaximizar.Size = new Size(23, 23);
+            iconmaximizar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconmaximizar.TabIndex = 2;
+            iconmaximizar.TabStop = false;
+            iconmaximizar.Click += iconmaximizar_Click;
             // 
             // iconcerrar
             // 
-            this.iconcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconcerrar.Image = ((System.Drawing.Image)(resources.GetObject("iconcerrar.Image")));
-            this.iconcerrar.Location = new System.Drawing.Point(1027, 3);
-            this.iconcerrar.Name = "iconcerrar";
-            this.iconcerrar.Size = new System.Drawing.Size(20, 20);
-            this.iconcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconcerrar.TabIndex = 1;
-            this.iconcerrar.TabStop = false;
-            this.iconcerrar.Click += new System.EventHandler(this.iconcerrar_Click);
+            iconcerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconcerrar.Image = (Image)resources.GetObject("iconcerrar.Image");
+            iconcerrar.Location = new Point(1030, 0);
+            iconcerrar.Margin = new Padding(4, 3, 4, 3);
+            iconcerrar.Name = "iconcerrar";
+            iconcerrar.Size = new Size(23, 23);
+            iconcerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconcerrar.TabIndex = 1;
+            iconcerrar.TabStop = false;
+            iconcerrar.Click += iconcerrar_Click;
             // 
             // btnMenu
             // 
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(6, 9);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(35, 35);
-            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.TabStop = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            btnMenu.Image = (Image)resources.GetObject("btnMenu.Image");
+            btnMenu.Location = new Point(7, 10);
+            btnMenu.Margin = new Padding(4, 3, 4, 3);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(41, 40);
+            btnMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            btnMenu.TabIndex = 0;
+            btnMenu.TabStop = false;
+            btnMenu.Click += btnMenu_Click;
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(81)))), ((int)(((byte)(209)))));
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(250, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1050, 600);
-            this.panelContenedor.TabIndex = 2;
+            panelContenedor.BackColor = Color.FromArgb(15, 81, 209);
+            panelContenedor.Dock = DockStyle.Fill;
+            panelContenedor.Location = new Point(292, 58);
+            panelContenedor.Margin = new Padding(4, 3, 4, 3);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Size = new Size(1088, 692);
+            panelContenedor.TabIndex = 2;
             // 
             // Interfaz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(110)))));
-            this.ClientSize = new System.Drawing.Size(1300, 650);
-            this.Controls.Add(this.panelContenedor);
-            this.Controls.Add(this.BarraTitulo);
-            this.Controls.Add(this.MenuVertical);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Interfaz";
-            this.Text = "Form2";
-            this.MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            this.BarraTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconminimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconrestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(12, 12, 110);
+            ClientSize = new Size(1380, 750);
+            Controls.Add(panelContenedor);
+            Controls.Add(BarraTitulo);
+            Controls.Add(MenuVertical);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Interfaz";
+            Text = "Form2";
+            MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
+            BarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)iconminimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconrestaurar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconmaximizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconcerrar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMenu).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -268,5 +321,7 @@
         private System.Windows.Forms.Button btnAddProducto;
         private System.Windows.Forms.Button EliminarProductos;
         private System.Windows.Forms.Button Editar;
+        private Button btnVentas;
+        private Button btnUsuarios;
     }
 }

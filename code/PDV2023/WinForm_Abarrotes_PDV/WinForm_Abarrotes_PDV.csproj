@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Back_CRUDs_BD\Back_CRUDs_BD.csproj" />
     <ProjectReference Include="..\Middle_Abarrotes_PDV\Middle_Abarrotes_PDV.csproj" />
   </ItemGroup>
 

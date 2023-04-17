@@ -42,5 +42,9 @@ public abstract class CRUDs_BD
     public abstract List<object[]> consulta(string tabla, string criterioBusqueda);
 
     public abstract object consulta1SoloValor(string campo, string tabla, string criterioBusqueda);
+
+    public abstract bool insertarusuario(string tabla, List<string> campos, List<ValoresAInsertar> valores);
+    public abstract bool modificarusuario(string tabla, List<string> campos, List<ValoresAInsertar> valores, int id);
+    public abstract bool borrarusuario(string tabla, int id);
 }
 

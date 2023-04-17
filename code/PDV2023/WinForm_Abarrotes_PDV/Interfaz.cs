@@ -33,8 +33,8 @@ namespace pruebaVENTA
 
         [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
-        [DllImport("user32.dll",EntryPoint ="SendMessage")]
-        private extern static void SendMessage(System.IntPtr hwnd,int wmsg,int wparam,int Lparam);
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int Lparam);
         private void iconcerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -49,14 +49,14 @@ namespace pruebaVENTA
 
         private void iconrestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState= FormWindowState.Normal;
+            this.WindowState = FormWindowState.Normal;
             iconmaximizar.Visible = true;
             iconrestaurar.Visible = false;
         }
 
         private void iconminimizar_Click(object sender, EventArgs e)
         {
-            this.WindowState=FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
@@ -71,7 +71,7 @@ namespace pruebaVENTA
         }
         private void AbrirFormInPanel(object Formhijo)
         {
-            if(this.panelContenedor.Controls.Count > 0) 
+            if (this.panelContenedor.Controls.Count > 0)
             {
                 this.panelContenedor.Controls.RemoveAt(0);
             }
@@ -101,6 +101,16 @@ namespace pruebaVENTA
         private void Editar_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Editar());
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Ventas());
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new FRMUsuarios());
         }
     }
 }

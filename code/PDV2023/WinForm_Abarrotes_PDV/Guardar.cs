@@ -1,4 +1,5 @@
 using Middle_Abarrotes_PDV;
+using pruebaVENTA;
 
 namespace WinForm_Abarrotes_PDV
 {
@@ -11,6 +12,7 @@ namespace WinForm_Abarrotes_PDV
         {
             InitializeComponent();
         }
+
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -39,7 +41,7 @@ namespace WinForm_Abarrotes_PDV
             }
             else
             {
-                MessageBox.Show("Producto registrado correctamewnte");
+                MessageBox.Show("Producto registrado correctamente");
             }
         }
 
@@ -70,8 +72,47 @@ namespace WinForm_Abarrotes_PDV
             }
             else
             {
-                MessageBox.Show("Producto registrado correctamewnte");
+                MessageBox.Show("Producto registrado correctamente");
             }
+        }
+
+        private void btnCancelarGuardar_Click(object sender, EventArgs e)
+        {
+            txtCodBarras.Clear();
+            txtNom.Clear();
+            txtImagen.Clear();
+            txtMarca.Clear();
+            txtPrecio.Clear();
+
+        }
+
+        private void txtProductos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txtImagen_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCodBarras_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

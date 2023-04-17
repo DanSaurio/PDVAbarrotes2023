@@ -11,7 +11,7 @@ namespace Middle_Abarrotes_PDV
     {
         //campos 
         DateTime fechaHora;
-        public int cajeroId = 0;
+        public int cajeroId = 1;
         public double monto = 0;
         public static string msgError = "";
         //vars para reutilizar el CRUD
@@ -19,7 +19,7 @@ namespace Middle_Abarrotes_PDV
         public Venta()
         {
             //crear una instancia de MYSQL a mi bd
-            bd = new Back_CRUDs_BD.MySql("localhost", "root", "", "pdvabarrotes_bd", "3306");
+            bd = new Back_CRUDs_BD.MySql("localhost", "root", "", "productos_pdv", "3306");
         }
 
         public double registrarVenta(int cajeroId, double monto, double pago,List<ProductoAVender> prodsAVender) {
@@ -29,10 +29,10 @@ namespace Middle_Abarrotes_PDV
             try
             {
                 List<string> campos = new List<string>() { "fecha_hora", "cajero_id", "monto"  };
-
+                string fechaformat = DateTime.Now.Year+"-"+DateTime.Now.Month+"-"+DateTime.Now.Day;
                 List<ValoresAInsertar> valores = new List<ValoresAInsertar>() 
                 { 
-                    new ValoresAInsertar(DateTime.Now.ToString(), true ),
+                    new ValoresAInsertar(fechaformat, true ),
                     new ValoresAInsertar(this.cajeroId.ToString(), false ),
                     new ValoresAInsertar(monto.ToString(), false ),
                 };
@@ -88,6 +88,8 @@ namespace Middle_Abarrotes_PDV
 
 
             return res;
+
+
         }
     }
 }

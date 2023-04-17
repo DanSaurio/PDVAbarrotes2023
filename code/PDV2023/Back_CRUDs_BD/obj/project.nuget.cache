@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sLch+U1yI29pbhd8y9elUC7NHgIyCAAiUAT1w9x6G72X3hssMu2f7DnY9fyd46S4P/+u9ULGuEgsdZ5yIz/uyA==",
+  "dgSpecHash": "hHuW28k1dB9TQ1ncIpFaYoBeyVmcxJeDh4oHYNHNnrvWgo6SIiu0jH0rxLQviNKwN71m826tW3o+sHjdrhO5bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danjo\\source\\repos\\Venta\\PDVAbarrotes2023-master\\code\\PDV2023\\Back_CRUDs_BD\\Back_CRUDs_BD.csproj",
+  "projectFilePath": "C:\\Users\\danjo\\OneDrive\\Escritorio\\VentaWena\\Venta\\PDVAbarrotes2023-master\\code\\PDV2023\\Back_CRUDs_BD\\Back_CRUDs_BD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danjo\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\danjo\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

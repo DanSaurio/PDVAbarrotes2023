@@ -71,6 +71,7 @@
             txtCodBarras.Name = "txtCodBarras";
             txtCodBarras.Size = new Size(110, 23);
             txtCodBarras.TabIndex = 3;
+            txtCodBarras.TextChanged += txtCodBarras_TextChanged;
             // 
             // txtPrecio
             // 
@@ -79,6 +80,7 @@
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(110, 23);
             txtPrecio.TabIndex = 2;
+            txtPrecio.TextChanged += txtPrecio_TextChanged;
             // 
             // txtImagen
             // 
@@ -87,6 +89,7 @@
             txtImagen.Name = "txtImagen";
             txtImagen.Size = new Size(110, 23);
             txtImagen.TabIndex = 4;
+            txtImagen.TextChanged += txtImagen_TextChanged;
             // 
             // comboPresentacion
             // 
@@ -127,6 +130,7 @@
             label3.Size = new Size(48, 17);
             label3.TabIndex = 8;
             label3.Text = "Precio";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -137,6 +141,7 @@
             label4.Size = new Size(79, 17);
             label4.TabIndex = 9;
             label4.Text = "Cod Barras";
+            label4.Click += label4_Click;
             // 
             // txtMarca
             // 
@@ -155,6 +160,7 @@
             label5.Size = new Size(58, 17);
             label5.TabIndex = 11;
             label5.Text = "Imagen";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -187,6 +193,7 @@
             txtProductos.TabIndex = 15;
             txtProductos.Text = "Productos";
             txtProductos.TextAlign = ContentAlignment.TopCenter;
+            txtProductos.Click += txtProductos_Click;
             // 
             // button1
             // 
@@ -224,6 +231,7 @@
             btnCancelarGuardar.TabIndex = 31;
             btnCancelarGuardar.Text = "Cancelar";
             btnCancelarGuardar.UseVisualStyleBackColor = false;
+            btnCancelarGuardar.Click += btnCancelarGuardar_Click;
             // 
             // Guardar
             // 

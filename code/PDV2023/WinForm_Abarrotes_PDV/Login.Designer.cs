@@ -36,16 +36,8 @@
             txtPassword = new Label();
             textBoxUsuario = new TextBox();
             textboxPassword = new TextBox();
-            BarraTitulo = new Panel();
-            iconminimizar = new PictureBox();
-            iconrestaurar = new PictureBox();
-            iconmaximizar = new PictureBox();
-            iconcerrar = new PictureBox();
-            BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconminimizar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconrestaurar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconmaximizar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconcerrar).BeginInit();
+            iconcerrarlogin = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)iconcerrarlogin).BeginInit();
             SuspendLayout();
             // 
             // CancelarLogin
@@ -139,70 +131,18 @@
             textboxPassword.TabIndex = 5;
             textboxPassword.KeyPress += textboxPassword_KeyPress;
             // 
-            // BarraTitulo
+            // iconcerrarlogin
             // 
-            BarraTitulo.BackColor = Color.Transparent;
-            BarraTitulo.Controls.Add(iconminimizar);
-            BarraTitulo.Controls.Add(iconrestaurar);
-            BarraTitulo.Controls.Add(iconmaximizar);
-            BarraTitulo.Controls.Add(iconcerrar);
-            BarraTitulo.Dock = DockStyle.Top;
-            BarraTitulo.Location = new Point(0, 0);
-            BarraTitulo.Margin = new Padding(4, 3, 4, 3);
-            BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(590, 16);
-            BarraTitulo.TabIndex = 6;
-            BarraTitulo.Paint += BarraTitulo_Paint;
-            BarraTitulo.MouseDown += BarraTitulo_MouseDown;
-            // 
-            // iconminimizar
-            // 
-            iconminimizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconminimizar.Image = (Image)resources.GetObject("iconminimizar.Image");
-            iconminimizar.Location = new Point(1397, 3);
-            iconminimizar.Margin = new Padding(4, 3, 4, 3);
-            iconminimizar.Name = "iconminimizar";
-            iconminimizar.Size = new Size(23, 23);
-            iconminimizar.SizeMode = PictureBoxSizeMode.Zoom;
-            iconminimizar.TabIndex = 4;
-            iconminimizar.TabStop = false;
-            // 
-            // iconrestaurar
-            // 
-            iconrestaurar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconrestaurar.Image = (Image)resources.GetObject("iconrestaurar.Image");
-            iconrestaurar.Location = new Point(1427, 3);
-            iconrestaurar.Margin = new Padding(4, 3, 4, 3);
-            iconrestaurar.Name = "iconrestaurar";
-            iconrestaurar.Size = new Size(23, 23);
-            iconrestaurar.SizeMode = PictureBoxSizeMode.Zoom;
-            iconrestaurar.TabIndex = 3;
-            iconrestaurar.TabStop = false;
-            iconrestaurar.Visible = false;
-            // 
-            // iconmaximizar
-            // 
-            iconmaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconmaximizar.Image = (Image)resources.GetObject("iconmaximizar.Image");
-            iconmaximizar.Location = new Point(1427, 3);
-            iconmaximizar.Margin = new Padding(4, 3, 4, 3);
-            iconmaximizar.Name = "iconmaximizar";
-            iconmaximizar.Size = new Size(23, 23);
-            iconmaximizar.SizeMode = PictureBoxSizeMode.Zoom;
-            iconmaximizar.TabIndex = 2;
-            iconmaximizar.TabStop = false;
-            // 
-            // iconcerrar
-            // 
-            iconcerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconcerrar.Image = (Image)resources.GetObject("iconcerrar.Image");
-            iconcerrar.Location = new Point(1457, 3);
-            iconcerrar.Margin = new Padding(4, 3, 4, 3);
-            iconcerrar.Name = "iconcerrar";
-            iconcerrar.Size = new Size(23, 23);
-            iconcerrar.SizeMode = PictureBoxSizeMode.Zoom;
-            iconcerrar.TabIndex = 1;
-            iconcerrar.TabStop = false;
+            iconcerrarlogin.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconcerrarlogin.Image = (Image)resources.GetObject("iconcerrarlogin.Image");
+            iconcerrarlogin.Location = new Point(567, 1);
+            iconcerrarlogin.Margin = new Padding(4, 3, 4, 3);
+            iconcerrarlogin.Name = "iconcerrarlogin";
+            iconcerrarlogin.Size = new Size(23, 23);
+            iconcerrarlogin.SizeMode = PictureBoxSizeMode.Zoom;
+            iconcerrarlogin.TabIndex = 8;
+            iconcerrarlogin.TabStop = false;
+            iconcerrarlogin.Click += iconcerrarlogin_Click;
             // 
             // Login
             // 
@@ -210,7 +150,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(12, 12, 110);
             ClientSize = new Size(590, 477);
-            Controls.Add(BarraTitulo);
+            Controls.Add(iconcerrarlogin);
             Controls.Add(textboxPassword);
             Controls.Add(textBoxUsuario);
             Controls.Add(txtPassword);
@@ -222,11 +162,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
             Text = "Form1";
-            BarraTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)iconminimizar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconrestaurar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconmaximizar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconcerrar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconcerrarlogin).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -240,11 +176,7 @@
         private System.Windows.Forms.Label txtPassword;
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.TextBox textboxPassword;
-        private Panel BarraTitulo;
-        private PictureBox iconminimizar;
-        private PictureBox iconrestaurar;
-        private PictureBox iconmaximizar;
-        private PictureBox iconcerrar;
+        private PictureBox iconcerrarlogin;
     }
 }
 
